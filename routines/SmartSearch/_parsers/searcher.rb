@@ -106,7 +106,7 @@ module SmartSearch
 
     def self.multisearch
       begin
-        read_file = File.readlines("_scripts/script.sen") #.split(" ")
+        read_file = File.readlines("_scripts/scripts.sen") #.split(" ")
 
         size_limit = read_file.size.to_i
 
