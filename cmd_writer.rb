@@ -1,5 +1,7 @@
+require "decisiontree"
+
 def write_fruit
-  open('routines/SmartSearch/_scripts/scripts.sen', 'w') {
+  open('routines/SmartSearch/_scripts/scripts.sen', 'w') { |f|
       f.puts "? |txt| present? fruit"
   }
 
@@ -7,7 +9,7 @@ def write_fruit
 end
 
 def write_basketcase
-  open('routines/SmartSearch/_scripts/scripts.sen', 'w') {
+  open('routines/SmartSearch/_scripts/scripts.sen', 'w') { |f|
       f.puts "? |txt| present? basketcase"
   }
 
@@ -15,7 +17,7 @@ def write_basketcase
 end
 
 def write_clogs
-  open('routines/SmartSearch/_scripts/scripts.sen', 'w') {
+  open('routines/SmartSearch/_scripts/scripts.sen', 'w') { |f|
       f.puts "? |txt| present? clogs"
   }
 
@@ -23,7 +25,7 @@ def write_clogs
 end
 
 def write_kite
-  open('routines/SmartSearch/_scripts/scripts.sen', 'w') {
+  open('routines/SmartSearch/_scripts/scripts.sen', 'w') { |f|
       f.puts "? |txt| present? kite"
   }
 
@@ -67,13 +69,13 @@ end
 if number > 4
   number = 0
 
-  open("data/input_vector/i_number.txt", "w") {
+  open("data/input_vector/i_number.txt", "w") { |f|
     f.puts number
   }
 else
   number = number + 1
 
-  open("data/input_vector/i_number.txt", "w") {
+  open("data/input_vector/i_number.txt", "w") { |f|
     f.puts number
   }
 end
